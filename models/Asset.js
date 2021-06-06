@@ -1,7 +1,7 @@
 const { Model, DataTypes } = require('sequelize');
 
-// TODO import/require sequelize from config file once server connection is established
-//! const sequelize = (../config/connection);
+// TODO import/require sequelize from config file once server connection is established in /config/connnection.js
+//! const sequelize = require('../config/connection');
 
 class Asset extends Model {}
 
@@ -47,7 +47,7 @@ Asset.init(
         type: DataTypes.BOOLEAN,
         allowNull: false,
     },
-  }
+  },
 );
 
-model.exports = [ Asset ];
+module.exports =  Asset;
