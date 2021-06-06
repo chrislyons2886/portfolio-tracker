@@ -1,4 +1,5 @@
 const { Model, DataTypes } = require('sequelize');
+const dotenv = require('dotenv');
 
 // TODO import/require sequelize from config file once server connection is established in /config/connnection.js
 //! const sequelize = require('../config/connection');
