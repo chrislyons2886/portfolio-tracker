@@ -1,10 +1,11 @@
 {
   "name": "portfolio-tracker",
   "version": "1.0.0",
-  "description": "",
+  "description": "Full stack application that allows the user to create a profile, and store their favorite stock or crypto holdings in a watchlist. ## __Table of Contents__ * [Dependencies](#dependencies) * [Installation](#installation) * [Usage](#usage) * [Tests](#tests) * [License](#license) * [Badges](#badges) * [GIF](#gif) * [Contributors](#contributors) * [Contact Information](#questions) * [Demo](#demo) ## __Dependencies__ node.js / npm / dotenv / bcrypt / nodemon /  express / express-session / express-handlebars",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -24,8 +25,8 @@
     "express-handlebars": "^5.3.2",
     "express-session": "^1.17.2",
     "mysql2": "^2.2.5",
-    "node": "^16.1.0",
     "nodemon": "^2.0.7",
     "sequelize": "^6.6.2"
-  }
+  },
+  "keywords": []
 }
