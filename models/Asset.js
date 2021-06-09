@@ -1,6 +1,6 @@
 const { Model, DataTypes } = require('sequelize');
 // TODO require/import sequelize once connection is established in config/connection.js
-//* const sequelize = require('../config/connection');
+const sequelize = require('../config/connection');
 
 class Asset extends Model {}
 
