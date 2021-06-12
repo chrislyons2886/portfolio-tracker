@@ -12,15 +12,19 @@ router.post('/api/users', async (req, res) => {
       res.status(200).json(userData);
     });
   } catch (err) {
+      console.log(err)
     res.status(400).json(err);
   }
 });
 
 router.post('/api/users/login', async (req, res) => {
+    console.log(req.body.email)
+    console.log(req.body.password)
   try {
     const userData = await User.findOne({ where: { email: req.body.email } });
-
+console.log(userData)
     if (!userData) {
+        console.log("hello")
       res
         .status(400)
         .json({ message: 'Incorrect email or password, please try again' });
@@ -28,8 +32,9 @@ router.post('/api/users/login', async (req, res) => {
     }
 
     const validPassword = await userData.checkPassword(req.body.password);
-
+    console.log(validPassword)
     if (!validPassword) {
+        console.log("test")
       res
         .status(400)
         .json({ message: 'Incorrect email or password, please try again' });
@@ -37,6 +42,7 @@ router.post('/api/users/login', async (req, res) => {
     }
 
     req.session.save(() => {
+        console.log("today")
       req.session.user_id = userData.id;
       req.session.logged_in = true;
       

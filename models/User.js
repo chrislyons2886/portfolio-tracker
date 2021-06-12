@@ -17,12 +17,8 @@ User.init(
       autoIncrement: true,
       primaryKey: true,
     },
-    fname: {
+    name: {
       type: DataTypes.STRING(35),
-      allowNull: false,
-    },
-    lname: {
-      type: DataTypes.STRING(50),
       allowNull: false,
     },
     email: {
