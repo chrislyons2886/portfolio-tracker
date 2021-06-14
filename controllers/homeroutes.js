@@ -18,7 +18,8 @@ router.get('/', async (req, res) => {
     // const projects = projectData.map((project) => project.get({ plain: true }));
 
     // Pass serialized data and session flag into template
-    res.render('homepage');
+
+    res.render('homepage', { title: 'Welcome | Home' })
   } catch (err) {
     res.status(500).json(err);
   }
@@ -37,10 +38,11 @@ router.get('/profile', async (req, res) => {
 
     // const project = projectData.get({ plain: true });
 
-    res.render('profile', {
-      // ...project,
-      // logged_in: req.session.logged_in
-    });
+    res.render('profile',{ 
+      title: 'Profile',
+      logged_in: true
+    })
+
   } catch (err) {
     res.status(500).json(err);
   }
@@ -73,7 +75,7 @@ router.get('/login', (req, res) => {
     return;
   }
 
-  res.render('login');
+  res.render('login', { title: 'Login'});
 });
 
 module.exports = router;
