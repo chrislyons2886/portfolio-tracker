@@ -1,4 +1,4 @@
-(function() {
+module.exports = (function() {
 
     const chart = new CanvasJS.Chart("chartContainer", {
         animationEnabled: true,
