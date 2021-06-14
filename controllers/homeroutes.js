@@ -38,7 +38,10 @@ router.get('/profile', async (req, res) => {
 
     // const project = projectData.get({ plain: true });
 
-    res.render('profile',{ title: 'Profile' })
+    res.render('profile', {
+      // ...profile,
+      logged_in: req.session.logged_in
+    });
   } catch (err) {
     res.status(500).json(err);
   }
