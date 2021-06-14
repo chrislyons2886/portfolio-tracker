@@ -7,9 +7,9 @@
     </div>
 </div>
 <div class="input-group my-3">
-  <input type="text" class="form-control" placeholder="Search Symbol" aria-label="Search Symbol" aria-describedby="basic-addon2">
+  <input id='symbol-search' type="text" class="form-control" placeholder="Search Symbol" aria-label="Search Symbol" aria-describedby="basic-addon2">
   <div class="input-group-append">
-    <button class='btn'>Search Symbol</button>
+    <button id='search-btn' class='btn'>Search Symbol</button>
   </div>
 </div>
 <button class='btn'>Add to Watchlist</button>
@@ -26,9 +26,9 @@
             <tbody>
                 <tr>
                 <th scope="row">1</th>
-                <td>AAPL</td>
-                <td>Apple Inc</td>
-                <td>$127.35</td>
+                <td id='symbol1'></td>
+                <td id='company1'>Apple Inc</td>
+                <td id='price1'>$127.35</td>
                 </tr>
                 <tr>
                 <th scope="row">2</th>
@@ -77,3 +77,4 @@
     };
 </script>
 <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+<script src="/js/api-1.js"></script>

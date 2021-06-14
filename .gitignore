@@ -2,4 +2,6 @@ node_modules
 .DS_Store
 .env
 HWREADME.md
+api-1.js
+index-api.html
 
