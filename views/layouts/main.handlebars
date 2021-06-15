@@ -10,11 +10,11 @@
 
 </head>
 
-<body>
+<body style="bg-light">
   <div>
     <header>
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <nav class="navbar navbar-expand-lg navbar-light link-light bg-secondary">
           <div class="container-fluid">
             <button
               class="navbar-toggler"
@@ -35,8 +35,15 @@
                 <li class="nav-item">
                   <a class="nav-link" href="/login">Log-In/ Sign-Up</a>
                 </li>
+                 {{#if logged_in}} 
+                 <li class="nav-item">
+                  <a class="nav-link" href="/profile">Profile</a>
+                </li>
+                 {{/if}}
                 <li class="nav-item">
-                  <button class="nav-link" id='logout'>Log Out</button>
+                 {{#if logged_in}} 
+                 <button class="nav-link" id='logout'>Log Out</button>
+                  {{/if}}
                   {{!-- <a class="nav-link" id='logout' href='/'>Log Out</a> --}}
 
                 </li>
@@ -45,37 +52,21 @@
             </div>
           </div>
         </nav>
-        <!-- Navbar -->
-      
-        <!-- Background image -->
-        {{!-- <div
-          class="p-5 text-center bg-image"
-          style="
-            background-image: url('ASSETS/unsplash graph.jpg');
-            height:400px;
-          "
-        >
-          <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
-            <div class="d-flex justify-content-center align-items-center h-100">
-              <div class="text-white">
-                <h1 class="mb-3">Pfolio</h1>
-                <h4 class="mb-3">Your Portfolio Manager</h4>
-                <a class="btn btn-outline-light btn-lg" href="#!" role="button"
-                  >Sign-Up</a
-                >
-              </div>
-            </div>
-          </div>
-        </div> --}}
-        <!-- Background image -->
+        
       </header>
     <main class="container container-fluid mt-5">
       <!-- Render the sub layout -->
       {{{ body }}}
     </main>
-    <footer>
-      
-    </footer>
+  
+      <footer class="bg-light text-center text-lg-start mt-4">
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2021 Copyright:
+    <a class="text-dark" href="https://google.com/">WallIT</a>
+  </div>
+ 
+</footer>
+    
   </div>
 
   <!-- Render script for logged in users only -->
