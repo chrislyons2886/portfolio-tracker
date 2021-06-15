@@ -33,10 +33,10 @@
                   <a class="nav-link" aria-current="page" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Sign-Up</a>
+                  <a class="nav-link" href="/signup.html">Sign-Up</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-lingit checjk" href="#">Log In</a>
+                  <a class="nav-link" href="/login.html">Log In</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">About</a>
@@ -62,14 +62,15 @@
             <div class="text-white">
               <h1 class="mb-3">Pfolio</h1>
               <h4 class="mb-3">Your Portfolio Manager</h4>
-              <a class="btn btn-outline-light btn-lg" href="#!" role="button"
-                >Sign-Up</a
+              <a class="btn btn-outline-light btn-lg" href="/login.html" role="button"
+                >Login</a
               >
             </div>
           </div>
-        </div>`
+        </div>
+        
       <!-- Render the sub layout -->
-      {{{ body }}}
+      <!-- {{{ body }}} -->
     </main>
     <footer>
       
@@ -77,78 +78,10 @@
   </div>
 
   <!-- Render script for logged in users only -->
-  {{#if logged_in}}
+  <!-- {{#if logged_in}}
   <script src="/js/logout.js"></script>
-  {{/if}}
+  {{/if}} -->
 </body>
 
 </html>
 
-<div class="d-flex justify-content-center h-100 pt-4">
-  <div class="card shadow">
-    <div class="card-header bg-secondary text-light">
-      <h3>Log In</h3>
-      
-    </div>
-    <div class="card-body">
-      <form>
-        <div class="form-group mx-sm-3 mb-2">
-          <label for="inputEmail" class="sr-only">Email</label>
-          <input type="Email" class="form-control" id="Email" placeholder="Email">
-        </div>
-
-        <div class="form-group mx-sm-3 mb-2">
-          <label for="inputPassword" class="sr-only">Password</label>
-          <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
-        </div>
-       
-        <div class="form-group pl-1 pt-1">
-            <input type="submit" value="Log in" class="btn btn-primary">
-        </div>
-      </form>
-    </div>
-    <div class="card-footer bg-secondary">
-      <div class="d-flex justify-content-center links text-light">
-        Not with us?<a class='pl-1 text-primary' href="/signup">Sign Up Today!</a>
-      </div>
-    
-    </div>
-  </div>
-</div>
-
-<div class="d-flex justify-content-center h-100 pt-4">
-  <div class="card shadow">
-    <div class="card-header bg-secondary text-light">
-      <h3>Sign Up</h3>
-      
-    </div>
-    <div class="card-body">
-      <form>
-        <div class="form-group mx-sm-3 mb-2">
-          <label for="inputName" class="sr-only">Name</label>
-          <input type="Name" class="form-control" id="Name" placeholder="Name">
-        </div>
-
-        <div class="form-group mx-sm-3 mb-2">
-          <label for="inputEmail" class="sr-only">Email</label>
-          <input type="Email" class="form-control" id="Email" placeholder="Email">
-        </div>
-
-        <div class="form-group mx-sm-3 mb-2">
-          <label for="inputPassword" class="sr-only">Password</label>
-          <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
-        </div>
-       
-        <div class="form-group pl-1 pt-1">
-            <input type="submit" value="Reigster" class="btn btn-primary">
-        </div>
-      </form>
-    </div>
-    <div class="card-footer bg-secondary">
-      <div class="d-flex justify-content-center links text-light">
-        Already registered?<a class='pl-1 text-primary' href="/login">Log in!</a>
-      </div>
-    
-    </div>
-  </div>
-</div>
