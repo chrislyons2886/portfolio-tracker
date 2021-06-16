@@ -1,5 +1,5 @@
 <div class="pb-3">
-    <h2>Welcome Username!</h2>
+    <h2>Welcome {{user.name}}!</h2>
 </div>
 <div class='card px-2 shadow'>
     <div class='card-body'>
@@ -11,6 +11,7 @@
   <input id='symbol-search' type="text" class="form-control" placeholder="Search Symbol" aria-label="Search Symbol" aria-describedby="basic-addon2">
   <div class="input-group-append">
     <button id='search-btn' class='btn'>Search Symbol</button>
+    <!-- search button searches stocks API-->
   </div>
 </div>
 
