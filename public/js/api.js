@@ -10,7 +10,9 @@ let currentFiat;
 let companyName;
 let fiatSymbol;
 let searchBtn = document.getElementById('search-btn');
-let symbol = document.getElementById('symbol1')
+let symbol = document.getElementById('symbol1');
+let watchList = document.getElementById('watch-list');
+
 
 const getStock = async (stockName) => {
     try{
@@ -21,11 +23,19 @@ const getStock = async (stockName) => {
         companyName = stockRes.companyName;
         fiatSymbol = stockRes.symbol;
         var asset = {
-            comapany_name:stockRes.companyName,
+            company_name:stockRes.companyName,
             stock_symbol:stockRes.symbol,
             current_price:stockRes.latestPrice,
         }
-        console.log(asset)
+        console.log(stockRes)
+        //* adds company name to top of chart
+        document.getElementById('company-chart').innerHTML = asset.company_name;
+
+        //* populates watchlist table
+        document.getElementById('symbol1').innerHTML = asset.stock_symbol
+        document.getElementById('company1').innerHTML = asset.company_name
+        document.getElementById('price1').innerHTML = `$${asset.current_price}`
+   
         return stockRes;
     } catch (err) {
         console.log(err)
@@ -35,11 +45,7 @@ const getStock = async (stockName) => {
 
 searchBtn.addEventListener('click', () => {
     let symbolSearch = document.getElementById('symbol-search').value;
-    console.log(symbolSearch)
-
     getStock(symbolSearch).then((data) => {
-    
+
     })
- //   symbol.innerHTML = symbolSearch.value;
-    console.log(symbol)
-}) 
+});
