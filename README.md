@@ -8,7 +8,7 @@ Full stack application that allows the user to create a profile, and store their
 * [Tests](#tests)
 * [License](#license)
 * [Badges](#badges)
-* [GIF](#gif)
+* [Screenshot](#screenshot)
 * [Contributors](#contributors)
 * [Contact Information](#questions)
 * [Demo](#demo)
@@ -32,8 +32,11 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 ## __Badges__
 [![License: MIT](https://img.shields.io/badge/License-MIT-hotpink.svg)](https://opensource.org/licenses/MIT)
 ## __ScreenShot__
-## __GIF__
-![Application Demo](INSERT GIF HERE)
+![homepage](https://user-images.githubusercontent.com/56444674/122289461-bde6e300-cec0-11eb-854d-b670ab9c1767.png)
+![login](https://user-images.githubusercontent.com/56444674/122289472-c0493d00-cec0-11eb-91b4-6ca70989ab61.png)
+![signup](https://user-images.githubusercontent.com/56444674/122289486-c63f1e00-cec0-11eb-904a-1264f0c0011c.png)
+![profile](https://user-images.githubusercontent.com/56444674/122289499-c93a0e80-cec0-11eb-9c10-b1850f1b9f85.png)
+
 ## __Contributors__
 Chris Lyons
 Sandhya Pant
@@ -51,4 +54,4 @@ If you have any questions or would like to contribute to the project please cont
 * [E-mail](mailto:samuel.sweigart@gmail.com)
 
 ## __Demo__
-[Click for Full Demo](ADD DEMO HERE) (set video quality to 720p / 1080p)
+[Click for Full Demo](https://drive.google.com/file/d/1FJRrJf2vo7BrIFENg7ehDPfGGlEmnHov/view?usp=sharing) (set video quality to 720p / 1080p)
