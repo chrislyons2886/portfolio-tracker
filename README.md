@@ -38,9 +38,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 ![profile](https://user-images.githubusercontent.com/56444674/122289499-c93a0e80-cec0-11eb-9c10-b1850f1b9f85.png)
 
 ## __Contributors__
-Chris Lyons
-Sandhya Pant
-Sam Sweigart
+* Chris Lyons
+* Sandhya Pant
+* Sam Sweigart
 ## __Questions__
 If you have any questions or would like to contribute to the project please contact one of our team members below:
 ### __Chris Lyons__
